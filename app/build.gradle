@@ -1,0 +1,16 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version '4.0.3'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+}
+
+gretty {
+    contextPath = '/'
+}
